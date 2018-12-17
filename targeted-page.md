@@ -22,3 +22,14 @@ A targeted page is
 ## Targeted phrase
 every targeted page needs a targeted phrase, “something” we want the page to get found for.
 one page, one unique (per site) dominant targeted phrase
+
+
+## Targeting elements
+
+* URL: must include a short variation (partial) of the targeted phrase
+title: \~80 to \~90 characters + brand, must include the targeted phrase, should encourage click-through (numbers, some unicode, actuality, trust)
+* meta description: \~160 characters or more, must be unique per page, should encourage click-through (numbers, unicode, actuality, trust)
+* headline 1: main headline of a page, best one per page, should include a variation of the targeted phrase
+* (above fold, main content) image filenames: must fulfill the the URL-rules (unique), should include a short variation of the targeted phrase
+(above fold, main content) image alt text: descriptive, about 5 words, should include a descriptive variation of the targeted  phrase
+* internal anchor text: links to this targeted page should include a sensemaking variation of the targeted phrase

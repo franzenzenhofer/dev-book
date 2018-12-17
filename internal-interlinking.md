@@ -1,6 +1,6 @@
 [Home](readme.md)
 
-# Onsite Internal interlinking
+# Internal interlinking
 
 1. every targeted page has at least one link from another targeted page
 1. every targeted page must be reachable through a click-path starting from the start page
