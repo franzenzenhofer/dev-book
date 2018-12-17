@@ -70,7 +70,7 @@ The startpage should pass the 4 SEO tests "good enough"
 * JavaScript Turned Off:
 	* Textual content should show up with JS turned off. 
 	* Visible links should be clickable. 
-* Fetch as GoogleBot (Mobile & Desktop) in Google Search Console should be correctly rendered and no medium or high ressource fetch warning should be listed.
+* Fetch as GoogleBot: Fetch as GoogleBot (Mobile & Desktop) in Google Search Console should be correctly rendered and no medium or high ressource fetch warning should be listed.
 
 
 
