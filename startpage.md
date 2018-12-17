@@ -45,7 +45,7 @@ An H1 - a biggest textual indicator of what the page is about about visible abov
 
 ## Content
 
-SEO has not requirements for the content on the startpage. Structured textul content is recommended but optional.
+SEO has no requirements for the content on the startpage. Structured textual content is recommended but optional.
 
 ## Interlinking
 
@@ -54,6 +54,8 @@ The startpage is a value hub. As a minimum we recommend:
  * 10 links to random targeted pages
  * 10 links to most important (editorial selected) targeted pages.  
  * 10 links to newest / latest updated targeted pages.
+
+ But you can easily have much, much more links, as long as they are designed, displayed in a way that they are usefull for human consumption.
 
  "Most Important" does not mean "site hierachical important" but importance based on "targeted pages we really, really want to get found for", "targeted pages targeted at competitive phrases", "high traffic targeted pages". Importance in regards to the search engine traffic business case. If startpage interlinking is purely based on site hierachy this is most likely not search engine optimized.
 

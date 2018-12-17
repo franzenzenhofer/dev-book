@@ -28,4 +28,4 @@ An URL the fulfilles URL-Rule 1 to 5 i.e.: `https://www.example./v/123456` is "g
 
 A truly search optimized URL must fulfill all URL-Rules.
 
-URL-Rule Nr.6 must never invalidate URL-Rule 1 to 5!
+URL-Rule Nr. 6 must never invalidate URL-Rule 1 to 5!
