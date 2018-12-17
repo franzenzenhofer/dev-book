@@ -23,4 +23,14 @@ The startpage does not redirect away from the root. I.e.
 
 The canonical of the startpage points to itself. I.e:: `https://www.example.org/` has the canonical `<link rel="canonical" href="https://www.example.com/" />`. If any alternate URLs for the startpage exist, they also point the canonical to the root of the domain. I.e.: `https://www.example.org/` has the canonical `<link rel="canonical" href="https://www.example.com/" />` 
 
+## Targeting
+
+### SEO Title
+
+### H1
+
+## Content
+
+## Interlinking
+
 
