@@ -55,6 +55,8 @@ The startpage is a value hub. As a minimum we recommend:
  * 10 links to most important (editorial selected) targeted pages.  
  * 10 links to newest / latest updated targeted pages.
 
+ "Most Important" does not mean "site hierachical important" but importance based on "targeted pages we really, really want to get found for", "targeted pages targeted at competitive phrases", "high traffic targeted pages". Importance in regards to the search engine traffic business case. If startpage interlinking is purely based on site hierachy this is most likely not search engine optimized.
+
 These links must not be placed in the footer, but in a section (which can be below fold) that is still clickable for the user. I.e. with section headlines like: "Explore Example.com", "Discover Example.com", "Top Pages", "New", "Latest Update", ...
 
 ## Distribution
