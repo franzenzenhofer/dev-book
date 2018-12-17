@@ -13,6 +13,8 @@ The startpage is a *value hub*, and
  * to a random selection of targeted pages
  * the newest / latest updated targeted pages
 
+## URL
+
 The startpage must be in the root of the domain. I.e.: `https://www.example.org/`
 
 The startpage does not redirect away from the root. I.e. 
