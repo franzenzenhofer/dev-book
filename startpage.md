@@ -28,8 +28,19 @@ The canonical of the startpage points to itself. I.e:: `https://www.example.org/
 ## Targeting
 
 ### SEO Title
+`<title>%brand% - %competitive phrase%</title>`
+
+I.e.: <title>Example - Buy Example online</title>
+
+### Meta Description
 
 ### H1
+
+An H1 - a biggest textual indicator of what the page is about about visible above fold - is optional on the startpage. In general it should be the brand or the brand and the company claim. I.e.: 
+
+* `<h1>Example</h1>`
+* `<h1>Example: The best examples on the internet</h1>`
+
 
 ## Content
 
