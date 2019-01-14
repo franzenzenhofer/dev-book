@@ -1,3 +1,9 @@
+
+---
+layout: default
+title: ebook
+---
+
 # URLs
 
 General recommended format for targeted pages is `https://www.%domain-name%.%tld%/%namespace%/%unique-slug%`.
