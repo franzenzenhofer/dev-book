@@ -1,5 +1,6 @@
 ---
 title: URLs Test
+layout: default
 ---
 
 # URLs
