@@ -23,6 +23,20 @@
   font-weight: 200;
 }
 
+.u-listUnstyled,
+.u-listInline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.u-listInline li {
+  display: inline;
+}
+
+.u-listInline li + li {
+  margin-left: .25rem;
+}
+
 </style>
 <header class="Header">
   <a class="Brand" href="https://www.fullstackoptimization.com" rel="noopener" target="_blank">
@@ -30,7 +44,7 @@
     <span class="Brand__Text">Full Stack Optimization</span>
   </a>
   <nav>
-    <ul>
+    <ul class="u-listInline">
       <li>
         <a href="/" rel="home">Home</a>
       </li>
