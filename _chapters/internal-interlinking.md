@@ -1,5 +1,5 @@
 ---
-title: URLs
+title: Internal interlinking
 layout: default
 description: 
 ---
