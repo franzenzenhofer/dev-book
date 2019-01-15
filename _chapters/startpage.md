@@ -1,7 +1,7 @@
 ---
 title: URLs
 layout: default
-description: About the start page
+description:
 ---
 
 # Startpage
