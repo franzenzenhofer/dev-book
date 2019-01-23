@@ -15,8 +15,8 @@ Custom web fonts loaded using @font-face are render critical assets:
 ## Avoid web fonts - Use a system font stack
 
 * a system font stack is a list of generic, system-integrated UI-fonts of different operating systems
-* generally the same as “web safe” fonts but mostly available in multiple font-weights (100-900) and a system-native look and feel
-* using a system font stack allows for more style variations than “web safe” while not harming performance 
+* generally the same as “web safe” fonts but mostly available in multiple font-weights (100-900)
+* using a system font stack allows for more style variations than “web safe” fonts while not harming performance 
 
 ```css
 body {
@@ -57,17 +57,18 @@ The unicode range of a font can be subsetted (to only include characters for a s
 
 Font file requests only start after the render tree is constructed. in other words, if a @font-face() rule is defined in an external stylesheet, the stylesheet has to be downloaded and parsed first, before the font file request is issued.
 
-![image: waterfall request chain]()
-
 By default browser don't render text until the font files have been downloaded.
 
 * always self-host font files: any 3rd party integration adds network overhead
-* ensure early font file downloads by using `<link rel="preload">` and/or inline the @font-face() rule into the HTML
+* use `local('Font Name')` in src list, to avoid HTTP requests for fonts that are installed on a system
 * use `font-display: swap` to avoid render blocking (and force browsers to display text in a fallback font until the particular font file arrives)
+* ensure early font file downloads by using `<link rel="preload">` and/or inline the @font-face() rule into the html
+* set long lasting browser cache directives (Cache-Control: max-age= / Expires)
 
 
 ```html
-<link rel="preload" href="/fonts/font-name.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/font-name-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/font-name-bold.woff2" as="font" type="font/woff2" crossorigin>
 
 <style>
 @font-face {
@@ -75,9 +76,21 @@ By default browser don't render text until the font files have been downloaded.
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Font name'),
-       url('/fonts/font-name.woff2') format('woff2'),
-       url('/fonts/font-name.woff') format('woff')
+  src: local('Font Name'),
+       url('/fonts/font-name-regular.woff2') format('woff2'),
+       url('/fonts/font-name-regular.woff') format('woff')
+}
+</style>
+
+<style>
+@font-face {
+  font-family: 'Font Name';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;s
+  src: local('Font Name'),
+       url('/fonts/font-name-bold.woff2') format('woff2'),
+       url('/fonts/font-name-bold.woff') format('woff')
 }
 </style>
 ```
