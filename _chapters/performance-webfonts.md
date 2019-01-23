@@ -35,7 +35,7 @@ For historical reasons (browser support) there are now four main font file forma
 
 * EOT and TTF are uncompressed formats (and need gzip compression)
 * WOFF and WOFF2 are compressed by design (whereas the latter has even stronger compression)
-* Note: The order of font format specification matters, as browsers use the first format they support. Specifying `format('woff')`before `format('woff2')` would cause the browser to download the larger .woff file
+* Note: The order of font format specification matters, as browsers use the first format they support. Specifying `format('woff')` before `format('woff2')` would cause the browser to download the larger .woff file
 
 ```css
 @font-face {
@@ -67,7 +67,8 @@ Font file requests are delayed until after the render tree is constructed. In ot
 * always self-host font files: any 3rd party integration adds network overhead
 * use `local('Font Name')` in src list to avoid HTTP requests for fonts that are installed on a system
 * use `font-display: swap` to avoid render blocking (and force browsers to display text in a fallback font until the particular font file arrives)
-* ensure early font file download by using `<link rel="preload">` and/or inline the @font-face() rule into the html
+* ensure early font file download by using `<link rel="preload">`
+* inline the `@font-face()` rule into the html to avoid critical request chains
 * set long lasting browser cache directives (Cache-Control: max-age= / Expires)
 
 
