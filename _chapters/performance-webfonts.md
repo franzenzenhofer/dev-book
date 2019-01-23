@@ -35,34 +35,39 @@ For historical reasons (browser support) there are now four main font file forma
 
 * EOT and TTF are uncompressed formats (and need gzip compression)
 * WOFF and WOFF2 are compressed by design (whereas the latter has even stronger compression)
-
-The unicode range of a font can be subsetted (to only include characters for a specific language), which can drastically decrease file size of the font.
-
-* use the unicode-range descriptor of the @font-face() rule
-* or use a web font generator to only include a certain subset
+* Note: The order of font format specification matters, as browsers use the first format they support. Specifying `format('woff')`before `format('woff2')` would cause the browser to download the larger .woff file
 
 ```css
 @font-face {
   font-family: 'Font Name';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Font name'),
-       url('/fonts/font-name.woff2') format('woff2'),
-       url('/fonts/font-name.woff') format('woff')
+  ...
+  src: local('Font Name'),
+       url('/fonts/font-name-regular.woff2') format('woff2'),
+       url('/fonts/font-name-regular.woff') format('woff')
+}
+```
+
+The unicode range of a font can be subsetted (to only include characters for a specific language), which can drastically decrease file size of the font.
+
+* use the unicode-range descriptor of the @font-face() rule
+* or use a web font generator to produce font files that only consist of a certain subset
+
+```css
+@font-face {
+  font-family: 'Font Name';
+  ...
   unicode-range: U+000-5FF; /* Latin glyphs */
 }
 ```
 
 ## Optimize font loading and text rendering
 
-Font file requests only start after the render tree is constructed. in other words, if a @font-face() rule is defined in an external stylesheet, the stylesheet has to be downloaded and parsed first, before the font file request is issued.
-
-By default browser don't render text until the font files have been downloaded.
+Font file requests are delayed until after the render tree is constructed. In other words, if a @font-face() rule is defined in an external stylesheet, the stylesheet has to be downloaded and parsed first, before the font file request is issued. - By default browser don't render text until the font files have been downloaded.
 
 * always self-host font files: any 3rd party integration adds network overhead
-* use `local('Font Name')` in src list, to avoid HTTP requests for fonts that are installed on a system
+* use `local('Font Name')` in src list to avoid HTTP requests for fonts that are installed on a system
 * use `font-display: swap` to avoid render blocking (and force browsers to display text in a fallback font until the particular font file arrives)
-* ensure early font file downloads by using `<link rel="preload">` and/or inline the @font-face() rule into the html
+* ensure early font file download by using `<link rel="preload">` and/or inline the @font-face() rule into the html
 * set long lasting browser cache directives (Cache-Control: max-age= / Expires)
 
 
