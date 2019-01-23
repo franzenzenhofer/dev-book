@@ -19,7 +19,7 @@ The size of a font file is determined by its format and the supported unicode ra
 * provide only modern and compressed font file formats (WOFF and WOFF2) 
 * subset the unicode-range to only include characters for a specific language
 
-For historical reasons (browser support) there are now four main font file formats (EOT, TTF, WOFF, WOFF2):
+For historical reasons (browser support) there are now four main font file formats:
 
 * EOT and TTF are uncompressed formats (and need gzip compression)
 * WOFF and WOFF2 are compressed by design (whereas the latter has even stronger compression)
@@ -40,4 +40,32 @@ The unicode range of a font can be subsetted (to only include characters for a s
   unicode-range: U+000-5FF; /* Latin glyphs */
 }
 ```
-s
+
+## Optimize font loading and text rendering
+
+font file requests only start after the render tree is constructed. in other words, if a @font-face() rule is defined in an external stylesheet, the stylesheet has to be downloaded and parsed first, before the font file request is issued.
+
+![image: waterfall request chain]()
+
+and by default browser don't render text until the font files have been downloaded.
+
+* always self-host font files: any 3rd party integration adds network overhead
+* ensure early font file downloads by using `<link rel="preload">` or inline the @font-face() rule into the HTML
+* use `font-display: swap` to avoid render blocking (browsers display text in a fallback font until the particular font file arrives)
+
+
+```html
+<link rel="preload" href="/fonts/font-name.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face {
+  font-family: 'Font Name';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Font name'),
+       url('/fonts/font-name.woff2') format('woff2'),
+       url('/fonts/font-name.woff') format('woff')
+}
+</style>
+```
