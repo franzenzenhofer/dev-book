@@ -12,6 +12,18 @@ Custom web fonts loaded using @font-face are render critical assets:
 * font file requests are delayed until the DOM and CSSOM are constructed (ie: @font-face in an external stylesheet introduce a critical request chain)
 * size, format and number of web fonts directly impact time to download
 
+## Avoid web fonts - Use a system font stack
+
+* a system font stack is a list of generic, system-integrated UI-fonts of different operating systems
+* generally the same as “web safe” fonts but mostly available in multiple font-weights (100-900) and a system-native look and feel
+* using a system font stack allows for more style variations than “web safe” while not harming performance 
+
+```css
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+```
+
 ## Asset Optimization - Font File Formats and Unicode-range subsetting
 
 The size of a font file is determined by its format and the supported unicode range (i.e. amount of glyphs for e.g. language specific special charactars, like Latin or Cyrillic).
@@ -43,15 +55,15 @@ The unicode range of a font can be subsetted (to only include characters for a s
 
 ## Optimize font loading and text rendering
 
-font file requests only start after the render tree is constructed. in other words, if a @font-face() rule is defined in an external stylesheet, the stylesheet has to be downloaded and parsed first, before the font file request is issued.
+Font file requests only start after the render tree is constructed. in other words, if a @font-face() rule is defined in an external stylesheet, the stylesheet has to be downloaded and parsed first, before the font file request is issued.
 
 ![image: waterfall request chain]()
 
-and by default browser don't render text until the font files have been downloaded.
+By default browser don't render text until the font files have been downloaded.
 
 * always self-host font files: any 3rd party integration adds network overhead
-* ensure early font file downloads by using `<link rel="preload">` or inline the @font-face() rule into the HTML
-* use `font-display: swap` to avoid render blocking (browsers display text in a fallback font until the particular font file arrives)
+* ensure early font file downloads by using `<link rel="preload">` and/or inline the @font-face() rule into the HTML
+* use `font-display: swap` to avoid render blocking (and force browsers to display text in a fallback font until the particular font file arrives)
 
 
 ```html
