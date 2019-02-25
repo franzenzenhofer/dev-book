@@ -22,6 +22,7 @@ both pages should pass the following tests:
 
 * minimum score of 80 (still orange) / preferrably 90 (green) + sensemaking screenshots for desktop and mobile
 
+
 **webpagetest.org**
 
 (test settings: Dulles, US or London (Atlantic), EU / Cable Connection)
@@ -29,14 +30,16 @@ both pages should pass the following tests:
 * start render (normalized): 700ms (1400ms max)
 * speed index (normalized): 1000ms (2000ms max)
 
-> NOTE @normalized: as you can't control the server performance of theme preview sites, and it might differ from server to server:
+> NOTE @normalized - as you can't control the server performance of theme preview sites, and it might differ from server to server:
 > * substract the measured TTFB from start render and speed index and 
 > * add a fixed TTFB of e.g. 200ms to both values
+
 
 **"JS turned off" Test**
 
 * above fold and main content must be visible on the site with JS turned off! 
 * whole site must be navigate-able with JS turned off!
+
 
 **Google Mobile Friendly Test**
 
@@ -44,6 +47,7 @@ both pages should pass the following tests:
 
 * green rating "Mobile Friendly"
 * sensemaking screenshot
+
 
 ## Case Study 
 
