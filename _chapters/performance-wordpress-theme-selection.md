@@ -148,8 +148,8 @@ th + td {text-align: right;}
       <td>Speed Index (normalized)<br><small>Start Render - TTFB + Fixed TTFB (200ms)</small></td><td class="u-failed">2089 ms</td>
     </tr>
     <tr>
-      <td colspan="2"><img src="i/lp-1-wpt.jpg" alt=""></td>
-      <td colspan="2"><img src="i/lp-2-wpt.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/lp-1-wpt.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/lp-2-wpt.jpg" alt=""></td>
     </tr>
   </tbody>
 </table>
