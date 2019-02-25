@@ -29,9 +29,7 @@ both pages should pass the following tests:
 * start render (normalized): 700ms (1400ms max)
 * speed index (normalized): 1000ms (2000ms max)
 
-> NOTE @normalized
->
-> as you can't control the server performance of theme preview sites, and it might differ from server to server:
+> NOTE @normalized: as you can't control the server performance of theme preview sites, and it might differ from server to server:
 > * substract the measured TTFB from start render and speed index and 
 > * add a fixed TTFB of e.g. 200ms to both values
 
