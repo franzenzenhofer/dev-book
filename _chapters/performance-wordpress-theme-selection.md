@@ -105,8 +105,8 @@ th + td {text-align: right;}
   </thead>
   <tbody>
     <tr>
-      <td colspan="2"><img src="i/lp-1-psi.jpg" alt=""></td>
-      <td colspan="2"><img src="i/lp-2-psi.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/lp-1-psi.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/lp-2-psi.jpg" alt=""></td>
     </tr>
   </tbody>
 </table>
@@ -122,8 +122,8 @@ th + td {text-align: right;}
   </thead>
   <tbody>
     <tr>
-      <td colspan="2"><img src="i/dp-1-psi.jpg" alt=""></td>
-      <td colspan="2"><img src="i/dp-2-psi.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/dp-1-psi.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/dp-2-psi.jpg" alt=""></td>
     </tr>
   </tbody>
 </table>
@@ -173,8 +173,8 @@ th + td {text-align: right;}
       <td>Speed Index (normalized)<br><small>Start Render - TTFB + Fixed TTFB (200ms)</small></td><td class="u-goodEnough">1429 ms</td>
     </tr>
     <tr>
-      <td colspan="2"><img src="i/dp-1-wpt.jpg" alt=""></td>
-      <td colspan="2"><img src="i/dp-2-wpt.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/dp-1-wpt.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/dp-2-wpt.jpg" alt=""></td>
     </tr>
   </tbody>
 </table>
@@ -191,8 +191,8 @@ th + td {text-align: right;}
   </thead>
   <tbody>
     <tr>
-      <td colspan="2"><img src="i/lp-1-js-off.jpg" alt=""></td>
-      <td colspan="2"><img src="i/lp-2-js-off.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/lp-1-js-off.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/lp-2-js-off.jpg" alt=""></td>
     </tr>
   </tbody>
 </table>
@@ -208,8 +208,8 @@ th + td {text-align: right;}
   </thead>
   <tbody>
     <tr>
-      <td colspan="2"><img src="i/dp-1-js-off.jpg" alt=""></td>
-      <td colspan="2"><img src="i/dp-2-js-off.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/dp-1-js-off.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/dp-2-js-off.jpg" alt=""></td>
     </tr>
   </tbody>
 </table>
@@ -226,8 +226,8 @@ th + td {text-align: right;}
   </thead>
   <tbody>
     <tr>
-      <td colspan="2"><img src="i/lp-1-mft.jpg" alt=""></td>
-      <td colspan="2"><img src="i/lp-2-mft.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/lp-1-mft.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/lp-2-mft.jpg" alt=""></td>
     </tr>
   </tbody>
 </table>
@@ -243,8 +243,8 @@ th + td {text-align: right;}
   </thead>
   <tbody>
     <tr>
-      <td colspan="2"><img src="i/dp-1-mft.jpg" alt=""></td>
-      <td colspan="2"><img src="i/dp-2-mft.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/dp-1-mft.jpg" alt=""></td>
+      <td colspan="2"><img src="{{site.url}}/i/dp-2-mft.jpg" alt=""></td>
     </tr>
   </tbody>
 </table>
