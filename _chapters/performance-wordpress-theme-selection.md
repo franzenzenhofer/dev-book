@@ -5,6 +5,7 @@ description:
 ---
 
 # Web Performance - Choosing the right WordPress theme
+
 WordPress theme selection can have major impact on how your site performs within SEO and UX
 
 * commercial WordPress themes try to satisfy a wide variety of purposes
@@ -12,28 +13,36 @@ WordPress theme selection can have major impact on how your site performs within
 * at the cost of web performance
 
 ## Testing themes
+
 pick two representative pages within a theme preview site (eg: 1 article detail page and 1 article list page)
 both pages should pass the following tests:
 
 **Google Page Speed Insights**
+
 * minimum score of 80 (still orange) / preferrably 90 (green) + sensemaking screenshots for desktop and mobile
 
 **webpagetest.org**
-test settings Dulles, US or London (Atlantic), EU / Cable Connection
+
+(test settings: Dulles, US or London (Atlantic), EU / Cable Connection)
 
 * start render (normalized): 700ms (1400ms max)
 * speed index (normalized): 1000ms (2000ms max)
 
 as you can't control the server performance of theme preview sites, and it might differ from server to server:
-(a) substract the measured TTFB from start render and speed index and 
-(b) add a fixed TTFB of 300ms to both values
+
+* substract the measured TTFB from start render and speed index and 
+
+* add a fixed TTFB of e.g. 200ms to both values
 
 **"JS turned off" Test**
+
 * above fold and main content must be visible on the site with JS turned off! 
 * whole site must be navigate-able with JS turned off!
 
 **Google Mobile Friendly Test**
-note: if possible (ie: preview pages are often blocked by robots.txt)
+
+(only if possible. ie: preview pages are often blocked by robots.txt)
+
 * green rating "Mobile Friendly"
 * sensemaking screenshot
 
