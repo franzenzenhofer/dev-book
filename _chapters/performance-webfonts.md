@@ -69,7 +69,7 @@ Font file requests are delayed until after the render tree is constructed. In ot
 * use `font-display: swap` to avoid render blocking (and force browsers to display text in a fallback font until the particular font file arrives)
 * ensure early font file download by using `<link rel="preload">`
 * inline the `@font-face()` rule into the html to avoid critical request chains
-* set long lasting browser cache directives (Cache-Control: max-age= / Expires)
+* set long lasting browser cache directives `Cache-Control: max-age=` or `Expires`
 
 
 ```html
