@@ -43,3 +43,9 @@ collections:
   chapters:
     output: true
     permalink: /a/:title
+
+defaults:
+  - scope:
+      path: "i"
+    values:
+      image: true
