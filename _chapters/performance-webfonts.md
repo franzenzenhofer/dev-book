@@ -1,5 +1,5 @@
 ---
-title: Web Performance - Web Font Optimization
+title: Web Font Optimization
 layout: default
 description: Custom web fonts are critical rendering assets. A proper loading strategy and font file optimization can improve page load and rendering times.
 ---
