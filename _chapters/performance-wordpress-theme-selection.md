@@ -31,7 +31,6 @@ both pages should pass the following tests:
 as you can't control the server performance of theme preview sites, and it might differ from server to server:
 
 * substract the measured TTFB from start render and speed index and 
-
 * add a fixed TTFB of e.g. 200ms to both values
 
 **"JS turned off" Test**
@@ -46,31 +45,38 @@ as you can't control the server performance of theme preview sites, and it might
 * green rating "Mobile Friendly"
 * sensemaking screenshot
 
-### Case Study 
+## Case Study 
 
 we randomly selected 2 themes:
 
-#### Theme #1
+### Theme #1
+
 Demo URL: https://mythemeshop.com/themes/schema-lite/
+
 Test URL: https://demo.mythemeshop.com/schema-lite/
 
 note: theme previews are often embedded via an ```<iframe>``` which would skew our test results. use your browsers developer tools to get the embedded URL and use that one for testing.
 
 List Page
+
 https://demo.mythemeshop.com/schema-lite/category/business/
 
 Detail Page
+
 https://demo.mythemeshop.com/schema-lite/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit/
 
 
-#### Theme #2
+### Theme #2
 Demo URL: https://preview.themeforest.net/item/aspen-wordpress-blog-theme/full_screen_preview/22830235
+
 Test URL: https://demos.shapingrain.com/aspen1/
 
 List Page
+
 https://demos.shapingrain.com/aspen1/category/lifestyle/
 
 Detail Page
+
 https://demos.shapingrain.com/aspen1/2018/09/29/in-search-of-the-perfect-coffee-in-downtown-manhattan/
 
 <style>
