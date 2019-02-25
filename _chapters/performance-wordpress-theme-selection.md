@@ -55,33 +55,33 @@ we randomly selected 2 themes:
 
 ### Theme #1
 
-Demo URL: https://mythemeshop.com/themes/schema-lite/
+Demo URL: <https://mythemeshop.com/themes/schema-lite/>
 
-Test URL: https://demo.mythemeshop.com/schema-lite/
+Test URL: <https://demo.mythemeshop.com/schema-lite/>
 
 note: theme previews are often embedded via an ```<iframe>``` which would skew our test results. use your browsers developer tools to get the embedded URL and use that one for testing.
 
 List Page
 
-https://demo.mythemeshop.com/schema-lite/category/business/
+<https://demo.mythemeshop.com/schema-lite/category/business/>
 
 Detail Page
 
-https://demo.mythemeshop.com/schema-lite/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit/
+<https://demo.mythemeshop.com/schema-lite/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit/>
 
 
 ### Theme #2
-Demo URL: https://preview.themeforest.net/item/aspen-wordpress-blog-theme/full_screen_preview/22830235
+Demo URL: <https://preview.themeforest.net/item/aspen-wordpress-blog-theme/full_screen_preview/22830235>
 
-Test URL: https://demos.shapingrain.com/aspen1/
+Test URL: <https://demos.shapingrain.com/aspen1/>
 
 List Page
 
-https://demos.shapingrain.com/aspen1/category/lifestyle/
+<https://demos.shapingrain.com/aspen1/category/lifestyle/>
 
 Detail Page
 
-https://demos.shapingrain.com/aspen1/2018/09/29/in-search-of-the-perfect-coffee-in-downtown-manhattan/
+<https://demos.shapingrain.com/aspen1/2018/09/29/in-search-of-the-perfect-coffee-in-downtown-manhattan/>
 
 <style>
 table {font-size: 80%;}
