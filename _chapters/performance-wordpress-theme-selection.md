@@ -48,8 +48,8 @@ When you found a theme of interest, pick two representative pages from within th
 **webpagetest.org**
 <small>Test settings: Dulles (US) or London (Atlantic / EU) with a Cable Connection</small>
 
-* **Start Render (normalized):** 700ms (1400ms max)
-* **Speed Index (normalized):** 1000ms (2000ms max)
+* **Start Render (normalized):** 700ms / 1400ms max
+* **Speed Index (normalized):** 1000ms / 2000ms max
 
 > NOTE @normalized
 > 
