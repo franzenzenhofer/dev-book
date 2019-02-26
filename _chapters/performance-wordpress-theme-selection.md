@@ -73,7 +73,7 @@ When you found a theme of interest, pick two representative pages from within th
 
 
 ## Case Study 
-testing of 2 randomly selected magazine/blog like themes
+test results of 2 randomly selected magazine/blog like themes
 
 
 > NOTE
@@ -81,17 +81,20 @@ testing of 2 randomly selected magazine/blog like themes
 > theme previews are sometimes embedded via ```<iframe>```s which would skew our test results. use your browsers developer tools to get the embedded URL and use that one for testing.
 >  
 > **Demo URL:** <https://mythemeshop.com/themes/schema-lite/> (where the theme is embedded)
+>
 > **Test URL:** <https://demo.mythemeshop.com/schema-lite/> (direct accessible URL)
 
 
 
 ### Theme #1
 **List Page:** <https://demo.mythemeshop.com/schema-lite/category/business/>
+
 **Detail Page:** <https://demo.mythemeshop.com/schema-lite/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit/>
 
 
 ### Theme #2
 **List Page:** <https://demos.shapingrain.com/aspen1/category/lifestyle/>
+
 **Detail Page:** <https://demos.shapingrain.com/aspen1/2018/09/29/in-search-of-the-perfect-coffee-in-downtown-manhattan/>
 
 <h4>Google Page Speed Insights</h4>
