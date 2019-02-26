@@ -7,11 +7,13 @@ description:
 
 # Web Performance - Choosing the right WordPress theme
 
-WordPress theme selection can have major impact on how your site performs within SEO and UX
+If you're using WordPress as a CMS, the theme you choose will have major impact on how your site will perform in terms of SEO.
 
 * commercial WordPress themes try to satisfy a wide variety of purposes
 * in consequence they grow in functionality and size (so called framework bloat) 
 * at the cost of web performance
+
+Therefore use a standard, simple, fast WordPress theme. Speed should have the highest priority for choosing and adapting a Wordpress theme.
 
 ## Testing themes
 
