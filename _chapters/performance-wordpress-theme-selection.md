@@ -15,8 +15,10 @@ WordPress theme selection can have major impact on how your site performs within
 
 ## Testing themes
 
-pick two representative pages within a theme preview site (eg: 1 article detail page and 1 article list page)
-both pages should pass the following tests:
+* pick two representative pages within a theme preview site (eg: 1 article detail page and 1 article list page / not the start page)
+* both pages should pass the following tests
+
+> NOTE - most theme previews are supported by some kind of asset optimization plugin (eg: autoptimize, w3totalcache), which (a) bundles CSS/JS and (b) optimizes the loading logic of (potentially render blocking) assets. - this, by itself is generally good practice and you should do so too, but beware that this may also skew performance based testing metrics. using the theme as is (ie: 'unoptimized') may then potentially hurt your site.
 
 **Google Page Speed Insights**
 
