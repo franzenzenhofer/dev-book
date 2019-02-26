@@ -87,17 +87,15 @@ test results of 2 randomly selected magazine/blog like themes
 
 
 ### Theme #1
-**List Page:** <https://demo.mythemeshop.com/schema-lite/category/business/>
-
-**Detail Page:** <https://demo.mythemeshop.com/schema-lite/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit/>
+* **List Page:** <https://demo.mythemeshop.com/schema-lite/category/business/>
+* **Detail Page:** <https://demo.mythemeshop.com/schema-lite/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit/>
 
 
 ### Theme #2
-**List Page:** <https://demos.shapingrain.com/aspen1/category/lifestyle/>
+* **List Page:** <https://demos.shapingrain.com/aspen1/category/lifestyle/>
+* **Detail Page:** <https://demos.shapingrain.com/aspen1/2018/09/29/in-search-of-the-perfect-coffee-in-downtown-manhattan/>
 
-**Detail Page:** <https://demos.shapingrain.com/aspen1/2018/09/29/in-search-of-the-perfect-coffee-in-downtown-manhattan/>
-
-<h4>Google Page Speed Insights</h4>
+<h3>Google Page Speed Insights</h3>
 <table>
   <thead>
     <tr>
@@ -132,7 +130,7 @@ test results of 2 randomly selected magazine/blog like themes
   </tbody>
 </table>
 
-<h4>webpagetest.org</h4>
+<h3>webpagetest.org</h3>
 <table>
   <thead>
     <tr>
@@ -183,7 +181,7 @@ test results of 2 randomly selected magazine/blog like themes
   </tbody>
 </table>
 
-<h4>JS on/off</h4>
+<h3>JS on/off</h3>
 <table>
   <thead>
     <tr>
@@ -218,7 +216,7 @@ test results of 2 randomly selected magazine/blog like themes
   </tbody>
 </table>
 
-<h4>Google Mobile Friendly Test</h4>
+<h3>Google Mobile Friendly Test</h3>
 <table>
   <thead>
     <tr>
