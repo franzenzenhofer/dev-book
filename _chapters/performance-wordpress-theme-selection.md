@@ -18,6 +18,7 @@ Therefore use a standard, simple, fast WordPress theme. Speed should have the hi
 ## Testing themes
 
 > NOTE
+>
 > many theme previews are supported by some kind of asset optimization plugin (eg: autoptimize, w3totalcache), which (a) bundle CSS/JS files and (b) optimizes the loading logic of (potentially render blocking) assets. - this, by itself is generally good practice and you should do so too, but beware that this may skew performance based testing metrics - as in sold off better than as when used out of the box (ie: 'unoptimized').
 >
 > indicators for plugin backed optimizations are bundled CSS and JS files (they often contain the name of the plugin within their file path)
@@ -26,8 +27,7 @@ Therefore use a standard, simple, fast WordPress theme. Speed should have the hi
 >
 > <img src="{{site.url}}/i/wp-themes-plugin-optimized-2.jpg" alt="Plugin optimized CSS bundling">
 
-* pick two representative pages within a theme preview site (eg: 1 article detail page and 1 article list page / not the start page)
-* both pages should pass the following tests
+When you found a theme of interest pick two representative pages within the preview site (eg: 1 article detail page and 1 article list page / not the start page) - both pages should pass the following tests:
 
 
 **Google Page Speed Insights**
