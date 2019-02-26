@@ -5,6 +5,7 @@ description:
 ---
 
 <style>
+small {display: block;}
 table {font-size: 80%;}
 th {text-align: left;}
 th + td {text-align: right;}
@@ -53,7 +54,7 @@ When you found a theme of interest, pick two representative pages from within th
 
 > NOTE @normalized
 > 
-> when you compare two or more themes, the server performance of the preview sites might vary. to normalize the rendering metrics across multiple themes
+> when you compare two or more themes, the server performance of the preview sites might vary. to normalize the rendering metrics across multiple themes:
 > * substract the measured TTFB from start render and speed index  
 > * and add a fixed TTFB of e.g. 200ms to both values
 
