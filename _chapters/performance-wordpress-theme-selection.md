@@ -28,7 +28,7 @@ Therefore, use a standard, simple, fast WordPress theme. Speed should have the h
 
 > NOTE
 >
-> many theme previews are supported by some kind of frontend optimization plugin (eg: autoptimize, w3totalcache), which (a) bundles CSS/JS files and (b) optimizes loading logics of (potentially render blocking) assets. - this, by itself, is generally good practice and you should do so too, but beware that this may skew performance based testing metrics. that way themes are often sold off better as when used out of the box, as in 'unoptimized'.
+> many theme previews are supported by some kind of frontend optimization plugin (eg: autoptimize, w3totalcache), which (a) bundles CSS/JS files and (b) optimizes loading logics of (potentially render blocking) assets. - this, by itself, is generally good practice and you should do so too, but beware that this may skew performance based testing metrics. themes are then often sold off better as when used out of the box (as in 'unoptimized').
 >
 > indicators for plugin backed optimizations are bundled CSS and JS files, which very likely contain the name of the plugin within their file path.
 >
@@ -46,17 +46,16 @@ When you found a theme of interest, pick two representative pages from within th
 
 
 **webpagetest.org**
-
-<small>Test settings: Dulles (US) or London (Atlantic / EU) with a Cable Connection)</small>
+<small>Test settings: Dulles (US) or London (Atlantic / EU) with a Cable Connection</small>
 
 * **Start Render (normalized):** 700ms (1400ms max)
 * **Speed Index (normalized):** 1000ms (2000ms max)
 
 > NOTE @normalized
 > 
-> as you can't control the server performance of theme preview sites, and it might differ from server to server:
-> * substract the measured TTFB from start render and speed index and 
-> * add a fixed TTFB of e.g. 200ms to both values
+> when you compare two or more themes, the server performance of the preview sites might vary. to normalize the rendering metrics across multiple themes
+> * substract the measured TTFB from start render and speed index  
+> * and add a fixed TTFB of e.g. 200ms to both values
 
 
 **"JS turned off" Test**
@@ -66,7 +65,7 @@ When you found a theme of interest, pick two representative pages from within th
 
 
 **Google Mobile Friendly Test**
-(test if possible; if not blocked by robots.txt)
+<small>test if possible; if not blocked by robots.txt</small>
 
 * green rating "Mobile Friendly"
 * sensemaking screenshot
